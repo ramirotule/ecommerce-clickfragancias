@@ -17,7 +17,7 @@ export default function PoliticaEnvios() {
         <p className="mb-4">
           Correo Argentino tiene tolerancia de 5 días para retirar un paquete en sucursal, si sobrepasa esos días me devuelven el paquete. En ese caso, debes comunicarte con nosotros por email, Instagram o WhatsApp (3534090880) para coordinar un nuevo envío, con costo.
         </p>
-        <p className="mb-4">Gracias por elegirnos, <b>FRAGANCES</b> 💖</p>
+        <p className="mb-4">Gracias por elegirnos, <b>Click Fragancias</b> 💖</p>
       </div>
     </section>
   );

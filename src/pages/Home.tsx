@@ -71,15 +71,15 @@ export default function Home() {
       </section>
 
       {/* Más vendidos */}
-      <section className="bg-pink-50 py-12">
+      <section className="bg-green-50 py-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-pink-900">Más vendidos</h2>
+          <h2 className="text-3xl font-bold mb-6 text-green-900">Más vendidos</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {masVendidos.map((m) => (
               <div key={m.id} className="bg-white rounded-2xl shadow p-4 flex flex-col items-center">
                 <div className="font-semibold text-center mb-3 text-lg">{m.title}</div>
-                <div className="text-pink-700 font-bold mt-2 mb-2">${m.price.toLocaleString('es-AR')}</div>
-                <button className="rounded-xl bg-pink-700 text-white px-4 py-2 text-sm font-semibold hover:bg-pink-900 transition">Comprar</button>
+                <div className="text-green-700 font-bold mt-2 mb-2">${m.price.toLocaleString('es-AR')}</div>
+                <button className="rounded-xl bg-green-700 text-white px-4 py-2 text-sm font-semibold hover:bg-green-900 transition">Comprar</button>
               </div>
             ))}
           </div>
@@ -90,13 +90,13 @@ export default function Home() {
     
 
       {/* Newsletter */}
-      <section className="bg-pink-100 py-12">
+      <section className="bg-green-100 py-12 mt-25">
         <div className="max-w-xl mx-auto text-center">
-          <h3 className="text-2xl font-bold mb-2 text-pink-900">¿Querés recibir nuestras ofertas?</h3>
-          <p className="mb-4 text-pink-800">¡Registrate ya mismo y comenzá a disfrutarlas!</p>
+          <h3 className="text-2xl font-bold mb-2 text-green-900">¿Querés recibir nuestras ofertas?</h3>
+          <p className="mb-4 text-green-800">¡Registrate ya mismo y comenzá a disfrutarlas!</p>
           <form className="flex flex-col sm:flex-row gap-3 justify-center">
-            <input type="email" placeholder="Tu email" className="rounded-xl px-4 py-2 border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400" />
-            <button type="submit" className="rounded-xl bg-pink-700 text-white px-6 py-2 font-semibold hover:bg-pink-900 transition">Enviar</button>
+            <input type="email" placeholder="Tu email" className="rounded-xl px-4 py-2 border border-green-300 focus:outline-none focus:ring-2 focus:ring-green-400" />
+            <button type="submit" className="rounded-xl bg-green-700 text-white px-6 py-2 font-semibold hover:bg-green-900 transition">Enviar</button>
           </form>
         </div>
       </section>
