@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Contacto() {
   const [form, setForm] = useState({ nombre: "", email: "", telefono: "", mensaje: "" });
   const [enviado, setEnviado] = useState(false);
 
-  function handleChange(e) {
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setEnviado(true);
     // Aquí podrías agregar lógica para enviar el formulario
